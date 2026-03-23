@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Sorting Visualizer</h1>
+
+<div class="controls">
+    <label>Speed:</label>
+    <input type="range" id="speed" min="10" max="200" value="100">
+
+    <label>Array:</label>
+    <input type="text" id="userArray" placeholder="Enter numbers separated by commas">
+
+    <label>Algorithm:</label>
+    <select id="algorithm">
+        <option>Bubble Sort</option>
+        <option>Selection Sort</option>
+        <option>Insertion Sort</option>
+        <option>Merge Sort</option>
+        <option>Quick Sort</option>
+    </select>
+
+    <button id="start">Start Sorting</button>
+    <button id="pause">Pause/Resume</button>
+    <button id="themeToggle">Toggle Dark/Light Mode</button>
+</div>
+
+<div class="stats">
+    <span id="time">Time: 0.00s</span>
+</div>
+
+<div id="container"></div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
